@@ -1,5 +1,5 @@
-FROM httpd:2.4
+FROM public.ecr.aws/docker/library/nginx:stable-bullseye
 
-COPY . /usr/local/apache2/htdocs/
+COPY --chmod=765 ./public-html /usr/share/nginx/html
 
 EXPOSE 80

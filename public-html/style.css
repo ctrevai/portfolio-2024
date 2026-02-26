@@ -358,9 +358,9 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* SPEAKING SECTION */
 
-#projects {
+#speaking {
   position: relative;
 }
 
@@ -369,20 +369,77 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.speaking-card {
+  text-align: left;
+  padding: 2rem;
 }
 
-.project-title {
-  margin: 1rem;
+.speaking-title {
+  font-size: 1.25rem;
   color: black;
+  margin-bottom: 0.5rem;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.speaking-venue {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: rgb(85, 85, 85);
+  margin-bottom: 0.75rem;
+}
+
+.speaking-desc {
+  font-size: 0.95rem;
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+}
+
+/* RESEARCH SECTION */
+
+#research {
+  position: relative;
+}
+
+.research-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.research-stats {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication-item {
+  padding: 1.5rem 2rem;
+  background: rgb(250, 250, 250);
+  border-radius: 1rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+}
+
+.publication-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgb(100, 100, 100);
+  margin-bottom: 0.25rem;
+}
+
+.publication-venue {
+  font-size: 0.85rem;
+  color: rgb(120, 120, 120);
 }
 
 /* CONTACT */

@@ -2,6 +2,48 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-alt: rgb(250, 250, 250);
+  --bg-menu: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: rgb(85, 85, 85);
+  --text-tertiary: rgb(100, 100, 100);
+  --text-muted: rgb(120, 120, 120);
+  --text-heading: rgb(30, 30, 30);
+  --border-color: rgb(163, 163, 163);
+  --border-dark: rgb(53, 53, 53);
+  --btn-primary-bg: rgb(53, 53, 53);
+  --btn-primary-text: #ffffff;
+  --btn-hover-bg: rgb(0, 0, 0);
+  --btn-hover-border: rgb(255, 255, 255);
+  --link-hover: grey;
+  --link-underline: rgb(181, 181, 181);
+  --icon-filter: none;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-card: #1e1e1e;
+  --bg-card-alt: #252525;
+  --bg-menu: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #909090;
+  --text-muted: #808080;
+  --text-heading: #d0d0d0;
+  --border-color: #404040;
+  --border-dark: #555555;
+  --btn-primary-bg: #e0e0e0;
+  --btn-primary-text: #121212;
+  --btn-hover-bg: #ffffff;
+  --btn-hover-border: #333333;
+  --link-hover: #aaaaaa;
+  --link-underline: #555555;
+  --icon-filter: invert(0.85);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +52,9 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: large;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 html {
@@ -17,7 +62,11 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
+}
+
+h1, h2, h3 {
+  color: var(--text-primary);
 }
 
 /* TRANSITION */
@@ -47,20 +96,21 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--text-primary);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--bg-primary);
 }
 
 a:hover {
-  color: grey;
+  color: var(--link-hover);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--link-underline);
 }
 
 .logo {
   font-size: 2rem;
+  color: var(--text-primary);
 }
 
 .logo:hover {
@@ -90,7 +140,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--text-primary);
   transition: all 0.3 ease-in-out;
 }
 
@@ -98,7 +148,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--bg-menu);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -110,7 +160,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--text-primary);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -236,7 +286,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--border-dark) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -246,20 +296,21 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--btn-hover-bg);
 }
 
 .btn-color-2 {
   background: none;
+  color: var(--text-primary);
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: var(--btn-hover-border) 0.1rem solid;
 }
 
 .btn-container {
@@ -301,10 +352,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--bg-card);
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: var(--border-dark) 0.1rem solid;
+  border-color: var(--border-color);
   text-align: center;
 }
 
@@ -326,7 +377,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -365,8 +416,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--border-color);
+  background: var(--bg-card-alt);
 }
 
 .speaking-card {
@@ -376,20 +427,20 @@ article .icon {
 
 .speaking-title {
   font-size: 1.25rem;
-  color: black;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
 .speaking-venue {
   font-weight: 600;
   font-size: 0.95rem;
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
   margin-bottom: 0.75rem;
 }
 
 .speaking-desc {
   font-size: 0.95rem;
-  color: rgb(100, 100, 100);
+  color: var(--text-tertiary);
   line-height: 1.5;
 }
 
@@ -407,7 +458,7 @@ article .icon {
 .research-stats {
   font-size: 1.1rem;
   font-weight: 600;
-  color: rgb(85, 85, 85);
+  color: var(--text-secondary);
 }
 
 .publications-list {
@@ -418,28 +469,28 @@ article .icon {
 
 .publication-item {
   padding: 1.5rem 2rem;
-  background: rgb(250, 250, 250);
+  background: var(--bg-card-alt);
   border-radius: 1rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
+  border: var(--border-color) 0.1rem solid;
 }
 
 .publication-item h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: rgb(30, 30, 30);
+  color: var(--text-heading);
   margin-bottom: 0.5rem;
 }
 
 .publication-authors {
   font-size: 0.9rem;
   font-style: italic;
-  color: rgb(100, 100, 100);
+  color: var(--text-tertiary);
   margin-bottom: 0.25rem;
 }
 
 .publication-venue {
   font-size: 0.85rem;
-  color: rgb(120, 120, 120);
+  color: var(--text-muted);
 }
 
 /* CONTACT */
@@ -455,9 +506,9 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  border: var(--border-dark) 0.1rem solid;
+  border-color: var(--border-color);
+  background: var(--bg-card-alt);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -491,4 +542,32 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* DARK MODE TOGGLE */
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: transform 300ms ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* ICON INVERSION FOR DARK MODE */
+
+.icon {
+  filter: var(--icon-filter);
+  transition: filter 300ms ease;
+}
+
+.profile-pic,
+.about-pic {
+  filter: none;
 }

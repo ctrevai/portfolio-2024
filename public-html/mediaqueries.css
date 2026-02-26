@@ -7,7 +7,8 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #speaking,
+  #research {
     height: fit-content;
   }
 }
@@ -99,5 +100,20 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .speaking-title {
+    font-size: 1.1rem;
+  }
+  .speaking-card {
+    padding: 1.25rem;
+  }
+  .publication-item {
+    padding: 1rem 1.25rem;
+  }
+  .publication-item h3 {
+    font-size: 0.9rem;
+  }
+  .research-stats {
+    font-size: 0.95rem;
   }
 }

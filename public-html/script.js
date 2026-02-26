@@ -26,13 +26,24 @@ function updateToggleIcons(theme) {
     });
 }
 
+function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    updateToggleIcons(theme);
+}
+
 function initTheme() {
     var saved = localStorage.getItem('theme');
-    if (!saved) {
-        saved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    document.documentElement.setAttribute('data-theme', saved);
-    updateToggleIcons(saved);
+    applyTheme(saved || getSystemTheme());
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (!localStorage.getItem('theme')) {
+            applyTheme(getSystemTheme());
+        }
+    });
 }
 
 initTheme();

@@ -1,0 +1,45 @@
+name: Deploy to S3 + CloudFront
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public-html/**"
+
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_REGION: us-east-1
+  S3_BUCKET: www.trevai.com
+  CLOUDFRONT_DISTRIBUTION_ID: E2P6NBNDBKFFLH
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync to S3
+        run: |
+          aws s3 sync public-html/ s3://${{ env.S3_BUCKET }}/ \
+            --delete \
+            --exclude ".DS_Store" \
+            --exclude "*.DS_Store"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"

@@ -115,6 +115,10 @@
   .speaking-card {
     padding: 1.25rem;
   }
+  .speaking-banner {
+    height: 230px;
+    object-position: 62% 35%;
+  }
   .publication-item {
     padding: 1rem 1.25rem;
   }

@@ -754,3 +754,71 @@ footer p {
 .about-pic {
   filter: none;
 }
+
+/* BRAND REWORK (2026-10) */
+
+.hero-title {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-sub {
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400 !important;
+  line-height: 1.6;
+}
+
+#socials-container a {
+  display: inline-flex;
+  color: var(--text-primary);
+}
+
+#socials-container a:hover {
+  text-decoration: none;
+}
+
+svg.icon {
+  width: 2rem;
+  height: 2rem;
+  filter: none;
+}
+
+.vision-card .insight-tag {
+  margin-bottom: 0.75rem;
+}
+
+.see-all {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.about-p2 {
+  margin-top: 1rem;
+}
+
+.text-container p {
+  line-height: 1.7;
+}
+
+.contact-lede {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-info-upper-container {
+  gap: 1rem;
+}
+
+.contact-info-container svg {
+  color: var(--text-primary);
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}

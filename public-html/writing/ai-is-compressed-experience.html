@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Is Compressed Experience — Chom Trevai</title>
+    <meta name="description" content="The question isn't whether AI will replace your skills. It's what you would build if experience stopped being the bottleneck." />
+    <meta name="author" content="Chomchana Trevai" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://trevai.com/writing/ai-is-compressed-experience.html" />
+    <meta property="og:title" content="AI Is Compressed Experience" />
+    <meta property="og:description" content="The question isn't whether AI will replace your skills. It's what you would build if experience stopped being the bottleneck." />
+    <meta property="og:image" content="https://trevai.com/assets/ct-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ctrevai" />
+    <meta name="twitter:creator" content="@ctrevai" />
+    <link rel="icon" type="image/jpeg" href="../assets/ct-profile-4.JPG" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="writing.css" />
+  </head>
+  <body>
+    <nav class="post-nav">
+      <div class="logo"><a href="../index.html">Chom Trevai</a></div>
+      <ul class="post-nav-links">
+        <li><a href="./index.html">Writing</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button></li>
+      </ul>
+    </nav>
+    <article class="post">
+      <p class="post-meta">Essay &middot; October 2026</p>
+      <h1>AI Is Compressed Experience</h1>
+      <p class="dek">
+        The question isn't whether AI will replace your skills. It's what you
+        would build if experience stopped being the bottleneck.
+      </p>
+
+      <p>
+        I spent seven years at The University of Tokyo learning robotics the
+        slow way. Research is mostly
+        years of reading, failing and slowly building intuition for what
+        works. That intuition is what people mean by experience: patterns you
+        can only earn by doing the thing many times.
+      </p>
+      <p>
+        Here's what has changed. The patterns a senior engineer picks up over
+        a decade, the checklist a lawyer refines over a career, the instincts
+        an operator builds by running a business through a few bad years:
+        a large share of that is now available in a conversation. AI is
+        compressed experience. It packs other people's lessons into something
+        you can borrow on demand.
+      </p>
+
+      <blockquote>
+        <p>Experience used to be the bottleneck. Now the bottleneck is acting on it.</p>
+      </blockquote>
+
+      <h2>What compression gives you</h2>
+      <p>
+        It changes the math on "it's too late to learn that." The distance
+        between beginner and useful used to be measured in years. For a lot of
+        skills it's now months, sometimes weeks. You can ask the questions
+        you'd be embarrassed to ask a colleague, get a first draft of the thing
+        you don't know how to start, and have your mistakes explained to you
+        while you make them.
+      </p>
+      <p>
+        That matters most for people who assumed a door had closed: the
+        engineer who always wanted to start a business, the operator who wants
+        to build software, the parent who wants to make a game with their kid.
+        The prerequisite used to be years of preparation. Increasingly, the
+        prerequisite is starting.
+      </p>
+
+      <h2>What compression doesn't give you</h2>
+      <p>
+        Compression is not judgment. AI will happily give you ten ways to do
+        something. Knowing which one fits your situation, your customers and
+        your constraints is still your job. So is knowing what good looks like,
+        and so is the unglamorous work of finishing.
+      </p>
+      <p>
+        That's why I don't think AI makes experience worthless. It makes
+        experience portable, and it makes judgment the scarce skill. If you've
+        spent twenty years in an industry, you're not starting over. You're the
+        person best placed to ask AI the right questions and spot the wrong
+        answers.
+      </p>
+
+      <h2>The better question</h2>
+      <p>
+        Most conversations about AI and work start with fear: which jobs go
+        away, which skills stop mattering. I'd rather start somewhere else.
+        If experience stopped being the thing standing between you and the
+        work you actually care about, what would you build?
+      </p>
+      <p>
+        Pick the thing you've put off because you "didn't have the
+        background." Start this week, with AI as your senior colleague. You
+        bring the passion and the judgment. Let it bring the years.
+      </p>
+
+      <div class="post-footer">
+        <p>
+          I write about using AI to build what you care about, and about running
+          a company of one. Short takes on <a href="https://x.com/ctrevai">X</a>,
+          longer ones on <a href="https://www.linkedin.com/in/chomchanatrevai/">LinkedIn</a>.
+          Views are my own.
+        </p>
+      </div>
+    </article>
+    <script>
+      function toggleTheme() {
+        var html = document.documentElement;
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        setIcons(next);
+      }
+      function setIcons(t) {
+        document.querySelectorAll('.theme-toggle').forEach(function (b) {
+          b.innerHTML = t === 'dark' ? '&#9788;' : '&#9790;';
+        });
+      }
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var t = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+        setIcons(t);
+      })();
+    </script>
+  </body>
+</html>

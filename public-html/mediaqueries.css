@@ -9,8 +9,8 @@
   #contact,
   #speaking,
   #research,
-  #ai-vision,
-  #insights {
+  #beliefs,
+  #writing {
     height: fit-content;
   }
 }
@@ -105,6 +105,15 @@
   }
   .title {
     font-size: 2rem;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-sub {
+    font-size: 1rem;
+  }
+  #profile {
+    height: fit-content;
   }
   .text-container {
     text-align: justify;

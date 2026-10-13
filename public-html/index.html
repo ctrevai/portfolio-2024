@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chom Trevai — AI Leader, JAPAC | Google Cloud</title>
-    <meta name="description" content="Dr. Chomchana Trevai — Regional GTM AI Lead for JAPAC at Google Cloud. 20+ years building AI and enterprise technology across Japan and Southeast Asia. Ph.D. in Robotics, University of Tokyo." />
+    <title>Chom Trevai — AI Is Compressed Experience</title>
+    <meta name="description" content="Dr. Chomchana (Chom) Trevai writes about using AI to compress years of experience, build what you care about, and run a company of one. 20+ years in AI, robotics and enterprise technology across Japan and Asia-Pacific." />
     <meta name="author" content="Chomchana Trevai" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://trevai.com" />
-    <meta property="og:title" content="Chom Trevai — AI Leader, JAPAC | Google Cloud" />
-    <meta property="og:description" content="AI Leader. Entrepreneur. Building the future of intelligent systems across Japan and Asia-Pacific." />
+    <meta property="og:title" content="Chom Trevai — AI Is Compressed Experience" />
+    <meta property="og:description" content="Use AI to close the years between wanting to do something and being able to. It's never too late to start." />
     <meta property="og:image" content="https://trevai.com/assets/ct-hero.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ctrevai" />
+    <meta name="twitter:creator" content="@ctrevai" />
     <meta name="twitter:url" content="https://trevai.com" />
-    <meta name="twitter:title" content="Chom Trevai — AI Leader, JAPAC | Google Cloud" />
-    <meta name="twitter:description" content="AI Leader. Entrepreneur. Building the future of intelligent systems across Japan and Asia-Pacific." />
+    <meta name="twitter:title" content="Chom Trevai — AI Is Compressed Experience" />
+    <meta name="twitter:description" content="Use AI to close the years between wanting to do something and being able to. It's never too late to start." />
     <meta name="twitter:image" content="https://trevai.com/assets/ct-hero.jpg" />
 
     <link rel="icon" type="image/jpeg" href="./assets/ct-profile-4.JPG" />
@@ -28,12 +30,11 @@
       <div class="logo">Chom Trevai</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#beliefs">Beliefs</a></li>
+          <li><a href="#writing">Writing</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#ai-vision">AI Vision</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#speaking">Speaking</a></li>
-          <li><a href="#insights">Insights</a></li>
-          <li><a href="#research">Research</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button></li>
         </ul>
@@ -48,12 +49,11 @@
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#beliefs" onclick="toggleMenu()">Beliefs</a></li>
+          <li><a href="#writing" onclick="toggleMenu()">Writing</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#ai-vision" onclick="toggleMenu()">AI Vision</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#speaking" onclick="toggleMenu()">Speaking</a></li>
-          <li><a href="#insights" onclick="toggleMenu()">Insights</a></li>
-          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button></li>
         </div>
@@ -62,41 +62,93 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/ct-hero.jpg"
-          alt="Chom Trevai speaking at a Google Cloud event"
+          src="./assets/ct-profile-4.JPG"
+          alt="Chom Trevai"
           class="profile-pic"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hi, I'm</p>
-        <h1 class="title">Chom</h1>
-        <p class="section__text__p2">AI Leader | Entrepreneur | Building the Future of Intelligent Systems</p>
+        <p class="section__text__p1">Hi, I'm Chom</p>
+        <h1 class="title hero-title">AI is compressed experience.</h1>
+        <p class="hero-sub">
+          It won't give you a passion. It closes the years between wanting to
+          do something and being able to. I write about using it to build what
+          you care about &mdash; and why it's never too late to start.
+        </p>
         <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#writing'">
+            Read
+          </button>
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Resume Chomchana Trevai 2026.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
             Contact
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="linkedin profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/chomchanatrevai/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="github"
-            class="icon"
-            onclick="location.href='https://github.com/ctrevai'"
-          />
+          <a href="https://www.linkedin.com/in/chomchanatrevai/" aria-label="LinkedIn">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a href="https://x.com/ctrevai" aria-label="X (formerly Twitter)" class="icon-x">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.8 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.9H6.5L17.8 20Z"/></svg>
+          </a>
+          <a href="https://github.com/ctrevai" aria-label="GitHub">
+            <img src="./assets/github.png" alt="GitHub" class="icon" />
+          </a>
         </div>
       </div>
+    </section>
+    <section id="beliefs">
+      <p class="section__text__p1">What I Believe</p>
+      <h1 class="title">Four Ideas I Keep Coming Back To</h1>
+      <div class="vision-container">
+        <div class="vision-card">
+          <span class="insight-tag">01</span>
+          <h3>AI is compressed experience</h3>
+          <p>The patterns a senior engineer, lawyer or operator spends a decade learning are now a conversation away. Experience is no longer the bottleneck. Acting on it is.</p>
+        </div>
+        <div class="vision-card">
+          <span class="insight-tag">02</span>
+          <h3>Judgment is the scarce skill now</h3>
+          <p>AI can give you ten ways to do something. Framing the right problem, knowing what good looks like and finishing the job are still on you &mdash; and they matter more than ever.</p>
+        </div>
+        <div class="vision-card">
+          <span class="insight-tag">03</span>
+          <h3>It's never too late to start</h3>
+          <p>The gap between beginner and useful has shrunk from years to months. What you already know isn't a sunk cost; it's the context that makes AI useful to you.</p>
+        </div>
+        <div class="vision-card">
+          <span class="insight-tag">04</span>
+          <h3>A company of one is now possible</h3>
+          <p>One person with good judgment and the right AI stack can run what used to take a team. I'm building mine in public, and sharing what works and what breaks.</p>
+        </div>
+      </div>
+    </section>
+    <section id="writing">
+      <p class="section__text__p1">Thoughts &amp; Perspectives</p>
+      <h1 class="title">Writing</h1>
+      <div class="insights-container">
+        <a class="insight-card" href="./writing/ai-is-compressed-experience.html">
+          <span class="insight-tag">Essay</span>
+          <h3>AI Is Compressed Experience</h3>
+          <p>Why the question isn't "will AI replace my skills?" but "what would I build if experience stopped being the bottleneck?"</p>
+        </a>
+        <a class="insight-card" href="https://x.com/ctrevai" target="_blank" rel="noopener">
+          <span class="insight-tag">Short takes</span>
+          <h3>Daily notes on X</h3>
+          <p>Opinions, experiments and building-in-public notes on running a company of one with AI. Follow @ctrevai.</p>
+        </a>
+        <a class="insight-card" href="https://www.linkedin.com/in/chomchanatrevai/recent-activity/all/" target="_blank" rel="noopener">
+          <span class="insight-tag">Long-form</span>
+          <h3>Field lessons on LinkedIn</h3>
+          <p>Longer posts on AI adoption, go-to-market across Asia, and what it takes to get from demo to production.</p>
+        </a>
+      </div>
+      <p class="see-all"><a href="./writing/index.html">All writing &rarr;</a></p>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -104,8 +156,8 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/ct-about.jpg"
-            alt="Chom Trevai presenting the Google Cloud AI stack"
+            src="./assets/ct-hero.jpg"
+            alt="Chom Trevai speaking to an audience"
             class="about-pic"
           />
         </div>
@@ -120,10 +172,9 @@
               <h3>Experience</h3>
               <p>
                 20+ years <br />
-                Technology & Business Leadership <br />
-                Regional GTM AI Lead, JAPAC (Google Cloud) <br />
+                AI, Robotics &amp; Enterprise Tech <br />
                 3x Founder <br />
-                Entrepreneur & Ventures Builder
+                Adviser to AI startups
               </p>
             </div>
             <div class="details-container">
@@ -136,71 +187,33 @@
               <p>
                 B.Eng. University of Electro-Communications<br />
                 Ph.D. The University of Tokyo<br />
-                Computer Science & Robotics
+                Computer Science &amp; Robotics
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Dr. Chomchana Trevai (Chom) is an entrepreneur, investor, and
-              ventures builder with over 20 years of experience at the
-              intersection of AI, robotics, and enterprise technology.
-              Currently Regional GTM AI Lead for JAPAC at Google Cloud, Chom
-              drives AI adoption and go-to-market strategy across the
-              Japan and Asia-Pacific region. Previously at AWS for 8 years
-              (2018-2026), he served as Head of AI/ML Business for ASEAN based
-              in Singapore, and before that as AI/ML Specialist in Japan,
-              helping organizations across the region operationalize machine
-              learning at scale. Earlier, he held business development and
-              technology leadership roles at Cisco Systems, GE Digital, and
-              ServiceMax in Japan. Chom holds a Ph.D. from The University of Tokyo, where his
-              research focused on cooperative multi-robot systems and autonomous
-              exploration using reaction-diffusion models. He is a frequent
-              speaker on AI, agentic AI, generative AI, and the future of
-              intelligent systems, and is passionate about democratizing AI/ML
-              to drive real-world impact.
+              I've spent more than 20 years where AI, robotics and business
+              meet: a Ph.D. in cooperative multi-robot systems at The
+              University of Tokyo, business and technology roles at Cisco,
+              GE Digital and ServiceMax in Japan, then leading AI/ML business
+              at AWS across Japan and Southeast Asia. Today I'm Regional GTM
+              AI Lead for JAPAC at Google Cloud, and I work with AI startups
+              as an adviser and builder.
+            </p>
+            <p class="about-p2">
+              Along the way I've watched AI turn years of hard-won experience
+              into something anyone can borrow. I write about how to use that
+              &mdash; for your career, your company, or the thing you've always
+              wanted to build. Views here are my own.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#ai-vision'"
-      />
-    </section>
-    <section id="ai-vision">
-      <p class="section__text__p1">What I Believe</p>
-      <h1 class="title">My AI Vision</h1>
-      <div class="vision-container">
-        <div class="vision-card">
-          <h3>AI Should Be Democratized, Not Gatekept</h3>
-          <p>Every organization, regardless of size or geography, deserves access to transformative AI capabilities. I've spent my career breaking down barriers to AI adoption across Asia-Pacific.</p>
-        </div>
-        <div class="vision-card">
-          <h3>Agentic AI Will Reshape Enterprise</h3>
-          <p>We're moving beyond chatbots to autonomous AI agents that reason, plan, and act. This shift will fundamentally transform how businesses operate and create value.</p>
-        </div>
-        <div class="vision-card">
-          <h3>Human-AI Collaboration, Not Replacement</h3>
-          <p>The most powerful outcomes emerge when humans and AI systems work together. AI amplifies human creativity and decision-making rather than replacing it.</p>
-        </div>
-        <div class="vision-card">
-          <h3>Asia-Pacific Will Lead AI Innovation</h3>
-          <p>With its diverse markets, rapid digitalization, and growing talent pool, JAPAC is uniquely positioned to be a global driver of practical AI innovation.</p>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">AI Career Journey</h1>
+      <p class="section__text__p1">The Proof</p>
+      <h1 class="title">Career Journey</h1>
       <div class="experience-details-container">
         <div class="timeline">
           <div class="timeline-item">
@@ -234,7 +247,7 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <span class="timeline-date">2008 - 2018</span>
-              <h3>Technology & Business Leadership</h3>
+              <h3>Technology &amp; Business Leadership</h3>
               <p class="timeline-company">Cisco Systems, GE Digital, ServiceMax &bull; Japan</p>
               <p class="timeline-desc">Business development and technology leadership roles across digital transformation, IoT, cybersecurity, and contact center intelligence.</p>
             </div>
@@ -243,7 +256,7 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <span class="timeline-date">2000 - 2007</span>
-              <h3>AI & Robotics Researcher</h3>
+              <h3>AI &amp; Robotics Researcher</h3>
               <p class="timeline-company">The University of Tokyo</p>
               <p class="timeline-desc">Ph.D. research on cooperative multi-robot systems and autonomous exploration using reaction-diffusion models. 14 publications, 78+ citations.</p>
             </div>
@@ -251,49 +264,31 @@
         </div>
         <div class="about-containers" style="margin-top: 2rem;">
           <div class="details-container">
-            <h2 class="experience-sub-title">AI & Business Expertise</h2>
+            <h2 class="experience-sub-title">AI &amp; Business Expertise</h2>
             <div class="article-container">
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Generative AI / LLMs</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Generative AI / LLMs</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Agentic AI & AI Agents</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Agentic AI &amp; AI Agents</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>MLOps & ML at Scale</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>MLOps &amp; ML at Scale</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>AI Go-to-Market Strategy</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>AI Go-to-Market Strategy</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Responsible AI & Governance</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Responsible AI &amp; Governance</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Multi-Robot Systems</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Multi-Robot Systems</h3></div>
               </article>
             </div>
           </div>
@@ -301,46 +296,28 @@
             <h2 class="experience-sub-title">Technology</h2>
             <div class="article-container">
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Foundation Models / LLMs</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Foundation Models / LLMs</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Python, TypeScript, JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Python, TypeScript, JavaScript</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Cloud Infrastructure (GCP & AWS)</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Cloud Infrastructure (GCP &amp; AWS)</h3></div>
               </article>
               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>AI/ML Frameworks & Tools</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>AI/ML Frameworks &amp; Tools</h3></div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#speaking'"
-      />
     </section>
     <section id="speaking">
-      <p class="section__text__p1">Talks & Thought Leadership</p>
+      <p class="section__text__p1">Talks &amp; Thought Leadership</p>
       <h1 class="title">Speaking</h1>
       <img
         src="./assets/ct-speaking.jpg"
@@ -354,13 +331,13 @@
             <h2 class="experience-sub-title speaking-title">Harnessing Proprietary Data in the Era of Generative AI</h2>
             <p class="speaking-venue">VinAI Research Talk</p>
             <p class="speaking-desc">
-              Insights on AWS's mission to democratize ML model access,
-              accelerated training, foundation models, and knowledge base
-              solutions for enterprise AI adoption.
+              Foundation models, accelerated training, and knowledge base
+              solutions &mdash; and how enterprises turn proprietary data into
+              an AI advantage.
             </p>
           </div>
           <div class="details-container color-container speaking-card">
-            <h2 class="experience-sub-title speaking-title">Data & AI for Innovation</h2>
+            <h2 class="experience-sub-title speaking-title">Data &amp; AI for Innovation</h2>
             <p class="speaking-venue">NECTEC-ACE Conference, Thailand</p>
             <p class="speaking-desc">
               How Data and AI can benefit innovation across public sector,
@@ -379,43 +356,11 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#insights'"
-      />
-    </section>
-    <section id="insights">
-      <p class="section__text__p1">Thoughts & Perspectives</p>
-      <h1 class="title">AI Insights</h1>
-      <div class="insights-container">
-        <a class="insight-card" href="https://www.linkedin.com/in/chomchanatrevai/" target="_blank">
-          <span class="insight-tag">Agentic AI</span>
-          <h3>The Rise of Agentic AI: From Chatbots to Autonomous Systems</h3>
-          <p>How agentic AI is moving beyond simple Q&A to autonomous reasoning, planning, and execution — and what it means for enterprise adoption in JAPAC.</p>
-        </a>
-        <a class="insight-card" href="https://www.linkedin.com/in/chomchanatrevai/" target="_blank">
-          <span class="insight-tag">GenAI Strategy</span>
-          <h3>Democratizing AI: Lessons from Scaling ML Across Southeast Asia</h3>
-          <p>Key insights from helping dozens of organizations move from AI pilots to production, and why the gap between experimentation and operationalization remains the biggest challenge.</p>
-        </a>
-        <a class="insight-card" href="https://www.linkedin.com/in/chomchanatrevai/" target="_blank">
-          <span class="insight-tag">Future of AI</span>
-          <h3>Why JAPAC Will Shape the Next Wave of AI Innovation</h3>
-          <p>The unique combination of market diversity, digital infrastructure, and talent that positions Japan and Asia-Pacific as a global AI innovation hub.</p>
-        </a>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#research'"
-      />
+      <p class="see-all"><a href="#research">Research &amp; publications &rarr;</a></p>
     </section>
     <section id="research">
       <p class="section__text__p1">Academic Contributions</p>
-      <h1 class="title">Research & Publications</h1>
+      <h1 class="title">Research &amp; Publications</h1>
       <div class="research-summary">
         <p class="research-stats">14 Research Works &bull; 78+ Citations &bull; University of Tokyo</p>
       </div>
@@ -424,7 +369,7 @@
           <div class="publication-item">
             <h3>Multiple Mobile Robot Exploration and Patrol Strategy Using a Self-Organizing Planner Based on a Reaction-Diffusion Equation on a Graph</h3>
             <p class="publication-authors">C. Trevai, N. Fujii, J. Ota, T. Arai</p>
-            <p class="publication-venue">Journal of Intelligent & Robotic Systems</p>
+            <p class="publication-venue">Journal of Intelligent &amp; Robotic Systems</p>
           </div>
           <div class="publication-item">
             <h3>Exploration Path Generation for Multiple Mobile Robots Using Reaction-Diffusion Equation on a Graph</h3>
@@ -448,26 +393,19 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <p class="contact-lede">Building something with AI, or thinking about starting? I'd like to hear about it.</p>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/chomchanatrevai/">LinkedIn</a>
-          </p>
+          <img src="./assets/linkedin.png" alt="" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/chomchanatrevai/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <svg viewBox="0 0 24 24" class="icon contact-icon icon-x" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.8 2h6.4l4.4 5.9L18.9 2Zm-1.1 18h1.7L8.3 3.9H6.5L17.8 20Z"/></svg>
+          <p><a href="https://x.com/ctrevai">@ctrevai</a></p>
         </div>
       </div>
     </section>
@@ -475,16 +413,16 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#beliefs">Beliefs</a></li>
+            <li><a href="#writing">Writing</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#ai-vision">AI Vision</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#speaking">Speaking</a></li>
-            <li><a href="#insights">Insights</a></li>
-            <li><a href="#research">Research</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <p class="footer-note">Views are my own.</p>
       <p id="copyright">
         <!-- Copyright &#169; Chom Trevai. All Rights Reserved. -->
       </p>

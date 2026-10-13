@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing — Chom Trevai</title>
+    <meta name="description" content="Essays by Chom Trevai on using AI as compressed experience, building what you care about, and running a company of one." />
+    <meta name="author" content="Chomchana Trevai" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trevai.com/writing/" />
+    <meta property="og:title" content="Writing — Chom Trevai" />
+    <meta property="og:description" content="Essays on using AI as compressed experience, building what you care about, and running a company of one." />
+    <meta property="og:image" content="https://trevai.com/assets/ct-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ctrevai" />
+    <link rel="icon" type="image/jpeg" href="../assets/ct-profile-4.JPG" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="writing.css" />
+  </head>
+  <body>
+    <nav class="post-nav">
+      <div class="logo"><a href="../index.html">Chom Trevai</a></div>
+      <ul class="post-nav-links">
+        <li><a href="../#beliefs">Beliefs</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button></li>
+      </ul>
+    </nav>
+    <main class="post">
+      <h1>Writing</h1>
+      <p class="dek">
+        Essays on using AI to compress years of experience, build what you care
+        about, and run a company of one. Short takes live on
+        <a href="https://x.com/ctrevai">X</a>.
+      </p>
+      <!-- POSTS:START (newest first; /site-sync inserts here) -->
+      <ul class="post-list">
+        <li>
+          <a class="insight-card" href="./ai-is-compressed-experience.html">
+            <span class="insight-tag">October 2026</span>
+            <h3>AI Is Compressed Experience</h3>
+            <p>Why the question isn't "will AI replace my skills?" but "what would I build if experience stopped being the bottleneck?"</p>
+          </a>
+        </li>
+      </ul>
+      <!-- POSTS:END -->
+    </main>
+    <script>
+      function toggleTheme() {
+        var html = document.documentElement;
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        setIcons(next);
+      }
+      function setIcons(t) {
+        document.querySelectorAll('.theme-toggle').forEach(function (b) {
+          b.innerHTML = t === 'dark' ? '&#9788;' : '&#9790;';
+        });
+      }
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var t = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+        setIcons(t);
+      })();
+    </script>
+  </body>
+</html>

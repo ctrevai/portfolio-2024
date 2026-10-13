@@ -1,0 +1,128 @@
+/* Writing pages — reuse tokens from ../style.css */
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  height: auto;
+}
+
+.post-nav .logo {
+  font-size: 1.5rem;
+}
+
+.post-nav .logo a:hover {
+  text-decoration: none;
+}
+
+.post-nav .theme-toggle {
+  color: var(--text-primary);
+}
+
+.post-nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.post {
+  /* override the global `article` rule in style.css (skill badges) */
+  display: block;
+  width: auto;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.post h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.post .dek {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.post h2 {
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.post p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.post blockquote {
+  border-left: 3px solid var(--text-primary);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin: 2rem 0;
+}
+
+.post blockquote p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.post-footer {
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.post-footer a {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.post-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.post-list .insight-card h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  .post h1 {
+    font-size: 1.85rem;
+  }
+  .post .dek {
+    font-size: 1.05rem;
+  }
+  .post p {
+    font-size: 1rem;
+  }
+  .post-nav-links {
+    gap: 0.9rem;
+    font-size: 0.9rem;
+  }
+  .post-nav .logo {
+    font-size: 1.2rem;
+  }
+}
